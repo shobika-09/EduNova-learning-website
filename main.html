@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #7eb6f2;
+            color: rgb(35, 35, 35);
+            padding: 10px 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #003d80;
+        }
+        .banner {
+            background: url('./background.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: rgb(205, 37, 37);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .banner h1 {
+            font-size: 36px;
+        }
+        .main {
+            padding: 20px;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .category {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 15px;
+            text-align: center;
+        }
+        .category img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .category h3 {
+            margin: 15px 0;
+        }
+        .category p {
+            color: #555;
+        }
+        .category a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .category a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #0056b3;
+            color: white;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>EduNova</h1>
+    </header>
+    <nav>
+        <a href="./main.html">Home</a>
+        <a href="./about.html">About</a>
+        
+        <a href="./course.html">Courses </a>
+        <a href="./index.html">Login </a>
+        
+    </nav>
+    
+    <div class="main">
+        <h1>Explore Our Categories</h1>
+        <div class="categories">
+            <div class="category">
+                <img src="./Aptitute.png" alt="Aptitude">
+                <h3>Aptitude</h3>
+                <p>Master quantitative, logical, and verbal aptitude with our curated content.</p>
+                <a href="./aptitude.html">Explore</a>
+            </div>
+            <div class="category">
+                <img src="./Top-programming-languages.jpg" alt="Programming">
+                <h3>Programming</h3>
+                <p>Learn programming languages like C++, Java, Python, and more.</p>
+                <a href="./course.html">Explore </a>
+            </div>
+            <div class="category">
+                <img src="./how-to-prepare-for-a-job-interview.webp" alt="Interview Prep">
+                <h3>Interview Preparation</h3>
+                <p>Get ready for interviews with top-notch materials and mock tests.</p>
+                <a href="./interview.html">Explore </a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 PrepLearn. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
